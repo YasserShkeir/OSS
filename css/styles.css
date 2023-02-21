@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background-color: #231d44;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.aboutHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0 50px 0 0;
+  padding: 0;
+  text-align: center;
+  flex-grow: 1;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.link {
+  font-size: 17px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.link1 {
+  color: #836cff;
+}
+
+.link1:hover {
+  color: #fff;
+}
+
+.link2 {
+  font-weight: 700;
+  color: #fff;
+}
+
+.link2:hover {
+  color: #836cff;
+}
+
+#bearLogo {
+  position: relative;
+  animation-name: moveBear;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#bearLogo:hover {
+  filter: drop-shadow(0 0 5px #ffc600);
+}
+
+@keyframes moveBear {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/* On mobile, body left and right margin is decreased */
+@media only screen and (max-width: 600px) {
+  body {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  header {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
